@@ -19,5 +19,8 @@ steps:
     npm install -g @angular/cli
     npm install
     ls
-    ng build --prod
+    cd ./ra-front
+    ls
+    # ng build --prod
+    ng build
   displayName: 'npm install and build'
