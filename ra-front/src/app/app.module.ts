@@ -72,10 +72,19 @@ import { RobotsTableComponent } from './components/robot-list/robots-table/robot
 import { RobotsToApproveTableComponent } from './components/robot-list/robots-toapprove-table/robots-toapprove-table.component';
 import {RobotaApprovalService} from './services/robotapproval.service';
 import { SpinnerComponent } from './components/adminpanel/shared/spinner/spinner.component';
-import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+
 import { HealthzComponent } from './components/healthz/healthz.component';
 import {MatIconModule, MatTooltipModule} from '@angular/material';
 import {SettingsComponent} from './components/settings/settings.component';
+import {MatSlideToggleModule} from "@angular/material/slide-toggle";
+import { TaskCreatorPanelComponent } from './components/task-creator-panel/task-creator-panel.component';
+import { DragDropModule } from "@angular/cdk/drag-drop";
+import { TaskListComponent } from './components/task-creator-panel/task-list/task-list.component';
+import { TaskCreatorComponent } from './components/task-creator-panel/task-creator/task-creator.component';
+import {MatExpansionModule} from '@angular/material/expansion';
+import {MatDialogModule} from '@angular/material/dialog';
+import { TaskDetailsComponent } from './components/task-creator-panel/task-details/task-details.component';
+import { SpecialTypeSelectComponent } from './components/task-creator-panel/special-type-select/special-type-select.component';
 
 
 const config: InputFileConfig = {};
@@ -133,8 +142,16 @@ const config: InputFileConfig = {};
     RobotsTableComponent,
     RobotsToApproveTableComponent,
     SpinnerComponent,
+<<<<<<< HEAD:ra-front/src/app/app.module.ts
     HealthzComponent,
     SettingsComponent
+=======
+    TaskCreatorPanelComponent,
+    TaskListComponent,
+    TaskCreatorComponent,
+    TaskDetailsComponent,
+    SpecialTypeSelectComponent
+>>>>>>> 94c08e745eaa411545169077488343a2a9b5d931:angularclient/src/app/app.module.ts
   ],
   imports: [
     BrowserModule,
@@ -147,8 +164,14 @@ const config: InputFileConfig = {};
     MatSelectModule,
     MatSlideToggleModule,
     ColorPickerModule,
+<<<<<<< HEAD:ra-front/src/app/app.module.ts
     MatIconModule,
     MatTooltipModule
+=======
+    DragDropModule,
+    MatExpansionModule,
+    MatDialogModule
+>>>>>>> 94c08e745eaa411545169077488343a2a9b5d931:angularclient/src/app/app.module.ts
   ],
   providers: [MapService, BarrierService, HttpClient, RobotService, GraphService, StoreService,
     StandService, AreaTypeService, BatteryTypeService, PropulsionTypeService,
